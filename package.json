@@ -4,15 +4,26 @@
   "description": "A lightweight prism geometry for three.js.",
   "type": "module",
   "exports": "./src/PrismGeometry.js",
+  "main": "./src/PrismGeometry.js",
+  "module": "./src/PrismGeometry.js",
   "keywords": [
     "three",
     "three.js",
     "geometry",
     "polyhedron",
-    "prism"
+    "prism",
+    "3d"
   ],
   "author": "GJVothel",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GJVothel/three-prism-geometry.git"
+  },
+  "bugs": {
+    "url": "https://github.com/GJVothel/three-prism-geometry/issues"
+  },
+  "homepage": "https://github.com/GJVothel/three-prism-geometry#readme",
   "peerDependencies": {
     "three": "^0.174.0"
   }
