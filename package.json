@@ -1,0 +1,19 @@
+{
+  "name": "three-prism-geometry",
+  "version": "0.1.0",
+  "description": "A lightweight prism geometry for three.js.",
+  "type": "module",
+  "exports": "./src/PrismGeometry.js",
+  "keywords": [
+    "three",
+    "three.js",
+    "geometry",
+    "polyhedron",
+    "prism"
+  ],
+  "author": "GJVothel",
+  "license": "MIT",
+  "peerDependencies": {
+    "three": "^0.174.0"
+  }
+}
