@@ -12,8 +12,35 @@ A lightweight geometry class for [three.js](https://threejs.org/) that generates
 
 ## Installation
 
-**ES Module import:**
+**NPM:**
+
+```Console
+npm i three-prism-geometry
+```
+
+## Usage
+
+Create a prism geometry from a set of coplanar base points and an offset vector.
+The top face will be the base polygon translated by the given offset.
 
 ```js
-import { PrismGeometry } from 'https://raw.githubusercontent.com/GJVothel/three-prism-geometry/main/src/PrismGeometry.js';
+import * as THREE from "three";
+import { PrismGeometry } from "three-prism-geometry";
+
+const points = [
+  new THREE.Vector3( 0, 0, 0),
+  new THREE.Vector3( -1, 1, 1),
+  new THREE.Vector3( -2, 2, 0),
+  new THREE.Vector3( -1, 1, -1)
+]
+
+const offset = new THREE.Vector3(0, 1, 0);
+
+const geometry = new PrismGeometry(points, offset);
+const material = new THREE.MeshStandardMaterial({ 
+  color: 0x3399ff, 
+  flatShading: true 
+});
+const mesh = new THREE.Mesh(geometry, material);
+scene.add(mesh);
 ```
