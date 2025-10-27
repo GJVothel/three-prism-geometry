@@ -34,12 +34,13 @@ import { PrismGeometry } from "three-prism-geometry";
 
 const points = [
   new THREE.Vector3( 0, 0, 0),
-  new THREE.Vector3( -1, 1, 1),
-  new THREE.Vector3( -2, 2, 0),
-  new THREE.Vector3( -1, 1, -1)
+  new THREE.Vector3( 1, 0, 0),
+  new THREE.Vector3( 1, 1, 0),
+  new THREE.Vector3( .5, .5, 0),
+  new THREE.Vector3( 0, 1, 0)
 ];
 
-const offset = new THREE.Vector3(0, 1, 0);
+const offset = new THREE.Vector3(0, 1, -1);
 
 const geometry = new PrismGeometry(points, offset);
 const material = new THREE.MeshStandardMaterial({ 
