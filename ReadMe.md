@@ -6,6 +6,7 @@ A lightweight geometry class for [three.js](https://threejs.org/) that generates
 
 - Simple API: base polygon + offset vector
 - Works with any 3D base polygon (convex or slightly concave)
+- You control the facing of the sides (reverse your point array if side faces are on the inside)
 - Fully closed mesh (CSG-ready)
 - Automatic normal calculation
 - Built-in validation (planarity, offset direction)
@@ -22,6 +23,10 @@ npm i three-prism-geometry
 
 Create a prism geometry from a set of coplanar base points and an offset vector.
 The top face will be the base polygon translated by the given offset.
+
+**Note:**
+
+The order of the input points matters. The points array should describe the base polygon in consistent winding order (clockwise or counter-clockwise as seen from outside the prism). If the side faces appear dark or look like they are lit from the inside, reverse the array before passing it to `PrismGeometry`:
 
 ```js
 import * as THREE from "three";
