@@ -37,7 +37,7 @@ const points = [
   new THREE.Vector3( -1, 1, 1),
   new THREE.Vector3( -2, 2, 0),
   new THREE.Vector3( -1, 1, -1)
-]
+];
 
 const offset = new THREE.Vector3(0, 1, 0);
 
