@@ -2,7 +2,7 @@
 
 A lightweight geometry class for [three.js](https://threejs.org/) that generates true prisms with parallel top and bottom faces and a variable offset vector between the two.
 
-> ⚠️ **Breaking change**
+> ⚠️ **Breaking change** (to versions 1.x)
 >
 > The constructor signature has fundamentally changed. `PrismGeometry` no longer accepts positional arguments — it now takes a single options object. Code written against earlier versions **will throw** until it is migrated.
 >
